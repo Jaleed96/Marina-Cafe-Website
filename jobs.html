@@ -62,9 +62,9 @@
 
                 <!-- put ul {list-style: none;} in css to remove the bullets-->
                   <ul class="unlist">
-                    <li style="padding-bottom: 1.5%">Name:  <input type="text" name="Name" id="firstName" size="25" maxlength="30" placeholder="Jane Doe"/></li>
-                    <li style="padding-bottom: 1.5%; padding-left: 0.1%">Email: <input type="email" name="Email" autocomplete="off" size="25" placeholder="email@email.com"/></li>
-                    <li style="padding-bottom: 1.5%">Phone: <input id="phone" type="tel" size="25" placeholder="(###) ###-####"/></li>
+                    <li style="padding-bottom: 1.5%">Name:  <input type="text" name="Name" id="firstName" size="25" maxlength="30" placeholder="Jane Doe" class="form-control"/></li>
+                    <li style="padding-bottom: 1.5%; padding-left: 0.1%">Email: <input type="email" name="Email" autocomplete="off" size="25" placeholder="email@email.com" class="form-control"/></li>
+                    <li style="padding-bottom: 1.5%">Phone: <input id="phone" type="tel" size="25" placeholder="(###) ###-####" class="form-control"/></li>
                   </ul>
                   <p>Please specify the job roles you are interested in:</p>
 
@@ -96,7 +96,7 @@
                     <option value ="One-three">More than 1 year</option>
                   </select>
 
-                  <p>Comments: </p><textarea name="Comment" cols="52" rows="5"></textarea>
+                  <p>Comments: </p><textarea name="Comment" cols="52" rows="5" class="form-control"></textarea>
                   <br/>
                   <input type="submit" /><input type="reset" />
                 </form>

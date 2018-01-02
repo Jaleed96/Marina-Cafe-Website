@@ -210,3 +210,7 @@ input, select, textarea {
   border: 2px solid white;
   transition: border .2s;
 }
+.form-control {
+  width: 50%;
+  
+}
