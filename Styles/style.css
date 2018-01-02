@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Rye|Shadows+Into+Light');
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url("Images/landing.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Rye;
+}
+.navbar {
+  background-color: rgba(117, 190, 218, 0.0);
+}
+.navbar-default .navbar-nav > li > a {
+  color: #FFF;
+}
+.navbar-default .navbar-nav > li > a:visited {
+  color: #FFF;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: #D9E254;
+  border-bottom: 0.05em solid #D9E254;
+}
+.activo {
+  background-color: #8E793E;
+}
+.navbar-default .navbar-header > a {
+  color: #FFF;
+}
+.navbar-default .navbar-header > a:visited {
+  color: #FFF;
+}
+.navbar-default .navbar-header > a:hover {
+  color: #D9E254;
+  border-bottom: 0.05em solid #D9E254;
+}
+.navbar.navbar-default {
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.navbar.navbar-default .navbar-collapse {
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.main-header {
+  font-weight: 500;
+  font-size: 4em;
+}
+.secondary-header {
+  font-family: Roboto;
+  font-size: 1.5em;
+}
+#content {
+  text-align: center;
+  padding-top: 20%;
+  margin-bottom: 35.5%;
+  color: #FFF;
+}
+hr {
+  width: 40%;
+}
+.img-container > img {
+  width: 80%;
+  height: auto;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+.col-md-5 {
+  background-image: url("Images/chalkboard.jpg");
+  color: #ECE8D3;
+  border: 1em double #AD974F;
+  text-align: center;
+}
+.small-text{
+  padding-top: 26.25%;
+  padding-bottom: 25.5%;
+}
+.small-img {
+  padding-top: 5.7%;
+  padding-bottom: 5.7%;
+}
+.col-md-10 {
+  background-image: url("Images/chalkboard.jpg");
+  color: #ECE8D3;
+  border: 1em double #AD974F;
+  text-align: center;
+  font-family: "Shadows into light";
+  margin-bottom: 5%;
+}
+.bottom-box {
+  background-image: url("Images/chalkboard.jpg");
+  color: #ECE8D3;
+  border: 1em double #AD974F;
+  text-align: center;
+  font-family: Rye;
+}
+#About-Us {
+  text-decoration: none;
+}
+.about-class2 {
+  margin-bottom: 10%;
+}
+div > div > p {
+  padding-top: 19.1%;
+  padding-bottom: 18.7%;
+}
+.about-section {
+  width: 100%;
+  background-image: url("Images/728jpg");
+}
+.sub {
+  font-size: 2em;
+  color: #FFF;
+}
+.sub2 {
+  font-size: 1.75em;
+  color: #FFF;
+}
+.subtitle {
+  color: #FFF;
+  font-size: 0.75em;
+}
+.menu-items {
+  list-style-type: none;
+}
+.list-items {
+  text-align: center;
+  color: #FFF;
+  font-size: 1.5em;
+}
+.price {
+  padding-bottom: 2.5%;
+}
+#full-menu {
+  text-decoration: none;
+}
+#breakfast {
+  text-decoration: none;
+}
+#lunch {
+  text-decoration: none;
+}
+#dinner {
+  text-decoration: none;
+}
+#drinks {
+  text-decoration: none;
+}
+.img-contain > img {
+  width: 70%;
+  height: auto;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+.smaller-text{
+  padding-top: 26.5%;
+  padding-bottom: 26%;
+}
+.smallest-text{
+  padding-top: 26.5%;
+  padding-bottom: 26.75%;
+}
+footer {
+  text-align: center;
+  background-color: #BCBCBC;
+  width: 100%;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+.logo {
+  width: 30%;
+  height: auto;
+}
+.job-form {
+  text-align: left;
+  padding-left: 7%;
+  list-style-type: none;
+  font-family: Roboto;
+  margin-bottom: 5%;
+}
+.unlist {
+  list-style-type: none;
+}
+input, select, textarea {
+  color: black;
+}
+.add-margin {
+  margin-bottom: 5%;
+}
+.p-style {
+  padding-top: 10%;
+  font-size: 1.5em;
+}
+.col-lg-10 {
+  height: 5%;
+}
+.button-link {
+  font-size: 1.25em;
+  padding: 1.25%;
+  color: #FFF;
+  background-color: #8E793E;
+}
+.button-link:hover {
+  color: #FFF;
+  background-color: #AD974F;
+  text-decoration: none;
+  border: 2px solid white;
+  transition: border .2s;
+}

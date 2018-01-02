@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jobs</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Styles/style.css">
+  </head>
+  <body>
+    <section><h6>.</h6>
+      <nav class="navbar navbar-default">
+        <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Marina Cafe</a>
+          </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="performances.html">Performances</a></li>
+              <li class="activo"><a href="jobs.html">Jobs <span class="sr-only">(current)</span></a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div id="content">
+              <img src="Styles/Images/logo.png" class="logo" alt="logo">
+              <h4 class="secondary-header">Essence of Elegance</h4>
+              <hr>
+              <a href="#application" class="button-link">Work with Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container about-section"><h6>.</h6>
+    <a id="application"></a>
+      <div class="container about-class">
+        <div class="row">
+          <div class="col-md-1">
+          </div>
+          <div class="col-md-10">
+            <div class="job-form">
+              <section>
+                <h2 style="margin-bottom: 5%;">Application Form</h2>
+                <form action="job_application.php" method="post" autocomplete="on">
+                  <input type="hidden" name="Student1Name" value="Danny Jeong" />
+                  <input type="hidden" name="Student2Name" value="Jaleed Ur Rehman" />
+                  <input type="hidden" name="Set" value="B" />
+
+                <!-- put ul {list-style: none;} in css to remove the bullets-->
+                  <ul class="unlist">
+                    <li style="padding-bottom: 1.5%">Name:  <input type="text" name="Name" id="firstName" size="25" maxlength="30" placeholder="Jane Doe"/></li>
+                    <li style="padding-bottom: 1.5%; padding-left: 0.1%">Email: <input type="email" name="Email" autocomplete="off" size="25" placeholder="email@email.com"/></li>
+                    <li style="padding-bottom: 1.5%">Phone: <input id="phone" type="tel" size="25" placeholder="(###) ###-####"/></li>
+                  </ul>
+                  <p>Please specify the job roles you are interested in:</p>
+
+                <!-- put ul {list-style: none;} in css to remove the bullets-->
+                  <ul class="unlist">
+                    <li style="padding-bottom: 1%"><input type="checkbox" name="Job" value="Bar Associate"> Bar Associate</li>
+                    <li style="padding-bottom: 1%"><input type="checkbox" name="Job" value="Server">Server</li>
+                    <li style="padding-bottom: 1%"><input type="checkbox" name="Job" value="Cleaning &amp; Maintenance">Cleaning &amp; Maintenance</li>
+                    <li><input type="checkbox" name="Job" value="Manager">Manager</li>
+                  </ul>
+
+                  <br/>
+                  <p>Employment type:</p>
+                  <input type="radio" name="employment_type" value="Part-time"/> Part Time
+                  <input type="radio" name="employment_type" value="Full-time"/> Full Time
+                  <br/>
+                  <br/>
+                  <p>Gender: </p>
+                  <input type="radio" name="gender" value="Male"/> Male
+                  <input type="radio" name="gender" value="Female"/> Female
+
+                  <br/>
+                  <br/>
+                  <p>Years of experience:</p>
+
+                  <select name="years_of_experience" size="1">
+                    <option value ="ONE">No Experience</option>
+                    <option value ="NA">Less than 1 year</option>
+                    <option value ="One-three">More than 1 year</option>
+                  </select>
+
+                  <p>Comments: </p><textarea name="Comment" cols="52" rows="5"></textarea>
+                  <br/>
+                  <input type="submit" /><input type="reset" />
+                </form>
+              </section>
+            </div>
+          </div>
+          <aside class="col-md-1">
+
+          </aside>
+        </div>
+      </div>
+  </section>
+  <footer>Copyright &copy; 2011 Marina Cafe
+    <p>marina@marinacafe.com</p>
+    <a href="https://www.searchenginegenie.com/obfuscate-email-tool.php">E-mail Obfuscator Tool</a>
+  </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+    // Select all links with hashes
+$('a[href*="#"]')
+// Remove links that don't actually link to anything
+.not('[href="#"]')
+.not('[href="#0"]')
+.click(function(event) {
+  // On-page links
+  if (
+    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+    &&
+    location.hostname == this.hostname
+  ) {
+    // Figure out element to scroll to
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    // Does a scroll target exist?
+    if (target.length) {
+      // Only prevent default if animation is actually gonna happen
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000, function() {
+        // Callback after animation
+        // Must change focus!
+        var $target = $(target);
+        $target.focus();
+        if ($target.is(":focus")) { // Checking if the target was focused
+          return false;
+        } else {
+          $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+          $target.focus(); // Set focus again
+        };
+      });
+    }
+  }
+});
+    </script>
+  </body>
+</html>

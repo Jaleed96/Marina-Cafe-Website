@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Performances</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Styles/style.css">
+  </head>
+  <body>
+    <section><h6>.</h6>
+      <nav class="navbar navbar-default">
+        <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Marina Cafe</a>
+          </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li class="activo"><a href="performances.html">Performances <span class="sr-only">(current)</span></a></li>
+              <li><a href="jobs.html">Jobs</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+      <div class="container add-margin">
+        <div class="row">
+          <div class="col-lg-12">
+            <div id="content">
+              <img src="Styles/Images/logo.png" class="logo" alt="logo">
+              <h4 class="secondary-header">Essence of Elegance</h4>
+              <hr>
+              <a href="#schedule" class="button-link">View Schedule</a>
+            </div>
+          </div>
+        </div>
+        <a id="schedule"></a>
+        <div class="row">
+          <div class="col-xs-1"></div>
+          <div class="col-md-5">
+            <div class="img-contain">
+                <img src="Styles/Images/performer.jpg" class="img" alt="J.T. Gray performing">
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="text-side">
+              <h2>November 2011</h2>
+              <p class="text-area smallest-text">
+                J.T. Gray will be back to entertain us with his unique folk music.
+              </p>
+            </div>
+          </div>
+          <div class="col-xs-1"></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1"></div>
+          <div class="col-md-5">
+            <div class="img-contain">
+                <img src="Styles/Images/performer2.jpg" class="img" alt="Bryan Arrowwood performing">
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="text-side">
+              <h2>December 2011</h2>
+              <p class="text-area smaller-text">
+                Bryan Arrowwood will sooth your soul with his violin music!
+              </p>
+            </div>
+          </div>
+          <div class="col-xs-1"></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1"></div>
+          <div class="col-lg-10 bottom-box">
+            <h2>March 2012</h2>
+            <p class="p-style">
+              Karaoke Night!
+            </p>
+          </div>
+          <aside class="col-xs-1"></aside>
+        </div>
+      </div>
+    </section>
+    <footer>Copyright &copy; 2011 Marina Cafe
+      <p>marina@marinacafe.com</p>
+      <a href="https://www.searchenginegenie.com/obfuscate-email-tool.php">E-mail Obfuscator Tool</a>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+    // Select all links with hashes
+$('a[href*="#"]')
+// Remove links that don't actually link to anything
+.not('[href="#"]')
+.not('[href="#0"]')
+.click(function(event) {
+  // On-page links
+  if (
+    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+    &&
+    location.hostname == this.hostname
+  ) {
+    // Figure out element to scroll to
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    // Does a scroll target exist?
+    if (target.length) {
+      // Only prevent default if animation is actually gonna happen
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000, function() {
+        // Callback after animation
+        // Must change focus!
+        var $target = $(target);
+        $target.focus();
+        if ($target.is(":focus")) { // Checking if the target was focused
+          return false;
+        } else {
+          $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+          $target.focus(); // Set focus again
+        };
+      });
+    }
+  }
+});
+    </script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Styles/style.css">
+  </head>
+  <body>
+    <section><h6>.</h6>
+      <nav class="navbar navbar-default">
+        <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Marina Cafe</a>
+          </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="activo"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="performances.html">Performances</a></li>
+              <li><a href="jobs.html">Jobs</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div id="content">
+              <img src="Styles/Images/logo.png" class="logo" alt="logo">
+              <h4 class="secondary-header">Essence of Elegance</h4>
+              <hr>
+              <a href="#About-Us" class="button-link">About Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container about-section"><h6>.</h6>
+    <a id="About-Us"></a>
+    <div class="container about-class">
+      <div class="row">
+          <div class="col-md-1">
+
+          </div>
+          <div class="col-md-5">
+            <div class="img-container">
+                <img src="Styles/Images/baristas.jpg" class="img" alt="baristas">
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="text-side">
+              <p class="text-area small-text">
+              Our company exists because we see purpose in getting our hands dirty,
+              and because we believe that one minute longer doesn't have to mean one minute wasted.
+              <!-- Taken from Matchstick coffee shop -->
+              </p>
+            </div>
+          </div>
+          <div class="col-md-1">
+
+          </div>
+        </div>
+      </div>
+      <div class="container about-class2">
+        <div class="row">
+          <div class="col-md-1">
+
+          </div>
+          <div class="col-md-5">
+            <div class="text-side">
+              <p class="text-area large-text">
+                We understand the high expectations our customers have of us.
+                That's why we try our hardest to exceed those expectations. We have high-speed wifi for our customers. In addition
+                to the parking on the main boulevard, we have reserved parking at the rear entrance. We also have live music performances every Thursday night from 7:30pm to 9:30pm.
+                We look forward to seeing you.</p>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="img-container small-img">
+                <img src="Styles/Images/seating.jpg" class="img" alt="seating">
+            </div>
+          </div>
+          <aside class="col-md-1">
+
+          </aside>
+        </div>
+      </div>
+    </section>
+    <footer>Copyright &copy; 2011 Marina Cafe
+      <p>marina@marinacafe.com</p>
+      <a href="https://www.searchenginegenie.com/obfuscate-email-tool.php">E-mail Obfuscator Tool</a>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+    // Select all links with hashes
+$('a[href*="#"]')
+// Remove links that don't actually link to anything
+.not('[href="#"]')
+.not('[href="#0"]')
+.click(function(event) {
+  // On-page links
+  if (
+    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+    &&
+    location.hostname == this.hostname
+  ) {
+    // Figure out element to scroll to
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    // Does a scroll target exist?
+    if (target.length) {
+      // Only prevent default if animation is actually gonna happen
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000, function() {
+        // Callback after animation
+        // Must change focus!
+        var $target = $(target);
+        $target.focus();
+        if ($target.is(":focus")) { // Checking if the target was focused
+          return false;
+        } else {
+          $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+          $target.focus(); // Set focus again
+        };
+      });
+    }
+  }
+});
+    </script>
+  </body>
+</html>
